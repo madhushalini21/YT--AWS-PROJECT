@@ -1,5 +1,5 @@
 # Serverless Multi-Region YouTube Analytics Lakehouse using AWS Glue, Lambda & Athena
- Serverless Multi-Region YouTube Analytics Lakehouse using AWS Glue, Lambda & Athena
+
 A cloud-native ETL pipeline that ingests YouTube trending video data across 10 regions, transforms it through a medallion architecture (Bronze > Silver > Gold), enforces data quality gates, and produces analytics-ready aggregations — all orchestrated by AWS Step Functions.
 
 ![Architecture Diagram](pipeline.jpeg)
@@ -37,18 +37,19 @@ Most publicly available datasets are static snapshots that quickly become outdat
 
 This project solves that challenge by building an automated cloud-based analytics platform that:
 
-Continuously collects trending video data from multiple countries
-Cleans and standardizes data from heterogeneous sources
-Applies data quality controls before analytics generation
-Produces business-ready datasets for reporting and decision making
-Enables trend analysis across regions, categories, and channels
+- Continuously collects trending video data from multiple countries
+- Cleans and standardizes data from heterogeneous sources
+- Applies data quality controls before analytics generation
+- Produces business-ready datasets for reporting and decision making
+- Enables trend analysis across regions, categories, and channels
 
 The platform allows organizations to identify:
 
-Which content categories are gaining popularity
-Which creators consistently dominate trending charts
-How engagement varies between countries
-Emerging content trends before they become mainstream
+- Which content categories are gaining popularity
+- Which creators consistently dominate trending charts
+- How engagement varies between countries
+- Emerging content trends before they become mainstream
+
 ## Overview
 
 This pipeline automates the end-to-end process of collecting, cleaning, and analyzing YouTube trending video data. It replaces manual Kaggle dataset downloads with live YouTube Data API v3 integration and produces three sets of business analytics tables:
